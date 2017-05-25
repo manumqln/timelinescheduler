@@ -1,0 +1,187 @@
+/* You can add global styles to this file, and also import other style files */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* Space out content a bit */
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+
+/* Custom page footer */
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+
+/* Supporting marketing content */
+
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+#wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+.draggables {
+    float: left;
+    width: 150px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    background: #eee;
+    text-align: left;
+}
+
+.draggables h4 {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+.draggables .fc-event {
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.draggables p {
+    margin: 1.5em 0;
+    font-size: 11px;
+    color: #666;
+}
+
+.draggables p input {
+    margin: 0;
+    vertical-align: middle;
+}
+
+
+/* SHADE DAYS IN THE PAST */
+
+td.fc-day.fc-past {
+    background-color: #EEEEEE;
+}
+
+.fc-timeline-event {
+    height: 50px;
+}
+
+.appointment-template {
+    background: green;
+}
+.e-appointment.hover .appointment-template {
+    background: grey;
+}
+
+.vehicle-added .vehicle-box {
+    display: block !important;
+}
+
+.driver-added .driver-box {
+    display: block !important;
+}
+
+.item-box {
+    /*display: none;    */
+    width: 100px;
+    border: 1px solid #CCC;
+    margin: 5px;
+    padding: 5px;
+}

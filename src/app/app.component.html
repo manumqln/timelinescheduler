@@ -1,0 +1,13 @@
+<!--<dx-scheduler [dataSource]="appointmentsData" [views]="view" currentView="timelineDay" [startDayHour]="0"
+    [endDayHour]="20" [cellDuration]="60" [groups]="['priority']" [currentDate]="currentDate" width="90%" [height]="580" crossScrollingEnabled="true">
+    <dxi-resource fieldExpr="ownerId" [allowMultiple]="true" [dataSource]="resourcesData" label="Owner" [useColorAsDefault]="true"></dxi-resource>
+    <dxi-resource fieldExpr="priority" [allowMultiple]="false" [dataSource]="[]" label="Priority"></dxi-resource>
+</dx-scheduler>-->
+<!--<p-schedule [events]="events" [header]="headerConfig" [defaultView]="'timelineDay'"></p-schedule>-->
+<ul class="nav navbar-nav" style="width: 100%; display: inline">
+		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="" [routerLink]="['/']">Syncfusion Angular 2</a></li>
+		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="home" [routerLink]="['/home']">Home</a></li>
+        <!-- Schedule sample navigation link -->
+        <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="schedule" [routerLink]="['/schedule']">Schedule</a></li>
+	</ul>
+<router-outlet></router-outlet>

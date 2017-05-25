@@ -1,0 +1,28 @@
+<div style="width: 100%; float: left;">
+    <div class="control" style="float: left; width: 20%;">
+
+        <ej-treeview [showCheckbox]="true" (nodeCheck)="nodeOnChange($event)" (nodeUncheck)="nodeOnChange($event)" [fields]="fields">
+        </ej-treeview>
+        <div class="ctrllabel">Vehicles</div>
+
+        <ul id="listitems">
+            <li class="vehicle-list lists" *ngFor="let vehicle of filteredVehicles" draggable [dragData]="vehicle"><a>{{vehicle.name}}</a></li>
+        </ul>
+        <div class="ctrllabel">Drivers</div>
+        <ul id="listitems">
+            <li class="driver-list lists" *ngFor="let driver of drivers" draggable [dragData]="driver"><a>{{driver.name}}</a></li>
+        </ul>
+
+    </div>
+    <div style="float: left; width:80%" id="Schedule1">
+
+        <ej-schedule id="Schedule4" width="100%" height="500px" [allowDragAndDrop]="noDrag" [enableAppointmentResize]="noDrag" [showQuickWindow]="noPopup"
+            droppable (onDragOver)="onDragOver($event)" (onDrop)="onDropped($event)" timeScale.minorSlotCount="4" [views]="['Day']"
+            currentView="day" [isResponsive]="responsive" starthour="0" endhour="23" [currentDate]="currentDate" [appointmentDragArea]="area"
+            [appointmentSettings.dataSource]=scheduleData [appointmentSettings.applyTimeOffset]="false" orientation="horizontal"
+            [appointmentTemplateId]="template">
+
+        </ej-schedule>
+
+    </div>
+</div>
